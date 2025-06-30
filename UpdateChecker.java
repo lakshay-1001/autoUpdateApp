@@ -9,7 +9,7 @@ import org.json.JSONObject;
 
 public class UpdateChecker {
 
-    private static final String UPDATE_JSON_URL = ConfigUtil.getProperty("external.url") + "/update/update.json";
+    private static final String UPDATE_JSON_URL = ConfigUtil.getProperty("external.url") + "/update/update.json";//url to the json
 
     public static JSONObject fetchUpdateInfo() throws Exception {
         URL url = new URL(UPDATE_JSON_URL);
